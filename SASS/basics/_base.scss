@@ -1,0 +1,106 @@
+
+
+
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+
+}
+
+
+body {
+  background: var(--backgroundColor);
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+
+  
+}
+
+.container{
+
+
+
+  width: 1090px;
+  margin: 10px auto; 
+  
+
+
+  display:grid;
+  grid-template-rows: 100px  1fr ;
+  grid-template-columns: repeat(4, 1fr) ;
+ grid-gap:3rem;
+ 
+ grid-template-areas: "nav nav nav nav"
+                      "header header header header" 
+                       ". box-2 box-3 side"
+                      "foot foot foot foot";
+
+
+}
+
+.container--2 {
+
+
+
+  width: 1090px;
+  margin: 10px auto; 
+  
+  
+  display:grid;
+   grid-template-rows: 100px 1fr 50px 1fr ;
+   grid-template-columns: repeat(4, 1fr) ;
+  grid-gap:3rem;
+  
+  
+}
+
+
+.container--3 {
+
+
+
+  width: 1090px;
+  margin: 10px auto; 
+
+
+  display: grid;
+
+ grid-template-columns: repeat(3, 1fr);
+
+
+
+  grid-gap: 3rem;
+ 
+}
+
+.container--4 {
+  width: 1090px;
+  margin: 10px auto; 
+
+
+  display: grid;
+
+ grid-template-columns: repeat(4, 1fr);
+
+
+
+  grid-gap: 3rem;
+
+ 
+}
+
+
+

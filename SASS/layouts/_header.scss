@@ -1,0 +1,30 @@
+.header {
+    background-color: black;
+        grid-column: header; 
+     background-image: url(../img/main.jpeg)  
+     ;
+     background-repeat: no-repeat;
+     background-size: cover;
+   height: 40vh;
+   align-items: center;
+   border-radius: var(--border-box);
+   background-color: rgba(0,0,0,0.4);
+    
+
+        &__text {
+            color: var(--white);
+          position: absolute;
+          top: 35%;
+          left: 42%;
+          transform: translate(-20%, -20%);
+          font-size: 6rem;
+         display: inline-block;
+         text-align: center;
+        }
+}
+
+.head {
+
+    grid-column: 1 / -1;
+}
+

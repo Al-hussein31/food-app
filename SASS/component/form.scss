@@ -1,0 +1,116 @@
+
+
+.tags {
+
+    grid-column: 1 /-1;
+   margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    grid-gap: 3rem;
+
+ 
+
+    &__link {
+        background-color: var(--grey-500);
+        transition: all .2s;
+            
+        &:hover {
+            background-color: var(--primary-700);
+        }
+     
+    }
+
+    &__card {
+        background-color: var(--grey-500);
+     transition: all .2s;
+        text-align: center;
+        border: none;
+        border-radius: .5rem;
+        color: var(--white);
+        
+    
+
+        &:hover {
+            background-color: var(--primary-700);
+        }
+     
+    }
+
+    &__text {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 1rem;
+
+     
+    }
+
+    &__recipe {
+        font-size: 1.5rem;
+        margin-top: -1.5rem;
+
+      
+    }
+}
+
+
+.form {
+
+    background-color: var(--white);
+    padding: 2.5rem 2.5rem;
+    
+
+    &__input {
+      background-color: var(--primary-100);
+      width: 50rem;
+      height: 3rem;
+      border-radius: var(--borderRadius);
+      border: 1px solid var(--grey-200);
+      overflow: visible;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    &__contact {
+
+    }
+
+    &__row {
+       
+    }
+
+    &__label {
+    display: flex;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    }
+
+    &__textarea {
+        background-color: var(--primary-100);  
+        width: 50rem;
+        height: 12rem;
+        border-radius: var(--borderRadius);
+      border: 1px solid var(--grey-200);
+      overflow: visible;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+}
+
+
+.pancake {
+    display: flex;
+   align-items: center;
+   text-align: center;
+   
+   &__tag {
+    margin-top: 1.5rem;
+    padding: .5rem;
+   }
+
+
+}

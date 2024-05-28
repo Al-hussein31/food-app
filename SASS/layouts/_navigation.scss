@@ -1,0 +1,39 @@
+.nav {
+  grid-column: 1/ -1;
+
+  display: grid;
+  align-items: center;
+
+  grid-template-columns: 30rem repeat(4, 8rem) max-content;
+
+  transition: var(--transition);
+
+  &__logo {
+    padding: 0;
+    margin-right: 2rem;
+    height: auto;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 1;
+    letter-spacing: var(--letterSpacing);
+    cursor: pointer;
+    padding: 1rem;
+    &:hover,
+    &:active {
+      color: var(--primary-700);
+    }
+  }
+}
+
+.contact-link {
+  margin: 2rem;
+
+  grid-column: 50 / span 1;
+}
